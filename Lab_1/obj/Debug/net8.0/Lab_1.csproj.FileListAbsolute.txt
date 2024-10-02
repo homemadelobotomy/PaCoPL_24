@@ -1,0 +1,15 @@
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\Lab_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\Lab_1.AssemblyInfoInputs.cache
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\Lab_1.AssemblyInfo.cs
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\Lab_1.csproj.CoreCompileInputs.cache
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\Lab_1.sourcelink.json
+D:\giwork\PaCoPL_24\Lab_1\bin\Debug\net8.0\Lab_1.exe
+D:\giwork\PaCoPL_24\Lab_1\bin\Debug\net8.0\Lab_1.deps.json
+D:\giwork\PaCoPL_24\Lab_1\bin\Debug\net8.0\Lab_1.runtimeconfig.json
+D:\giwork\PaCoPL_24\Lab_1\bin\Debug\net8.0\Lab_1.dll
+D:\giwork\PaCoPL_24\Lab_1\bin\Debug\net8.0\Lab_1.pdb
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\Lab_1.dll
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\refint\Lab_1.dll
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\Lab_1.pdb
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\Lab_1.genruntimeconfig.cache
+D:\giwork\PaCoPL_24\Lab_1\obj\Debug\net8.0\ref\Lab_1.dll
