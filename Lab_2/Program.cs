@@ -2,15 +2,10 @@
 using System.Numerics;
 using System.Collections.Generic;
 using System.Collections;
-using MathNet.Numerics.LinearAlgebra;
-using MathNet.Numerics.LinearAlgebra.Double;
-using MathNet.Numerics.LinearRegression;
 
 
-interface ICreate
-{
-    public void Create();
-}
+
+
 abstract class Figure : IComparable<Figure>,IPrint
 {
     public abstract double Area();
@@ -46,15 +41,9 @@ class Check
     }
 }
 
-class Rectangle : Figure, ICreate
+class Rectangle : Figure
 {
-   public void Create()
-    {
-        Console.WriteLine("Введите высоту прямоугольника");
-        this.height = Check.InputCheck(Console.ReadLine());
-        Console.WriteLine("Введите ширину прямоугольника");
-        this.width = Check.InputCheck(Console.ReadLine());
-    }
+   
     public override double Area()
     {
         return height * width;
@@ -83,7 +72,7 @@ class Rectangle : Figure, ICreate
     }
 
 }
-class Square : Rectangle, ICreate
+class Square : Rectangle
 {
     
     public Square(double side): base(side,side)
@@ -91,14 +80,7 @@ class Square : Rectangle, ICreate
   
     }
     public Square() { }
-    public void Create()
-    {
-        Console.WriteLine("Введите сторону квадрата");
-        double side = Check.InputCheck(Console.ReadLine());
-        this.height = side;
-        this.width = side;
-
-    }
+    
     public override string ToString()
     {
         return "Сторона: " + this.height.ToString() + " Площадь: " + this.Area().ToString();  
@@ -108,14 +90,10 @@ class Square : Rectangle, ICreate
         Console.WriteLine("Квадрат\n" + this.ToString());
     }
 }
-class Circle : Figure, ICreate
+class Circle : Figure
 {
 
-    public void Create()
-    {
-        Console.WriteLine("Введите радиус круга");
-        this.radius = Check.InputCheck(Console.ReadLine());
-    }
+    
     public Circle() { }
     public Circle(double radius)
     {
@@ -181,54 +159,12 @@ class Program
         stack.Push(s1);
         stack.Push(c1);
         stack.Pop();
-
+        Console.ReadLine();
         return 0;
        
     }
 
-    static void interactive()
-    {
-        while (true)
-        {
-            switch (Menu())
-            {
-                case 1:
-                    Rectangle r1 = new Rectangle();
-                    r1.Create();
-
-                    r1.Print();
-                    break;
-                case 2:
-                    Square s = new Square();
-                    s.Create();
-                    s.Print();
-                    break;
-                case 3:
-                    Circle c = new Circle();
-                    c.Create();
-                    c.Print();
-                    break;
-                case 4:
-                    return ;
-                default:
-                    break;
-
-            }
-
-        }
-    }
-    static double Menu()
-    {
-        Console.WriteLine("\nКакую фигуры вы ходите создать? ");
-        Console.WriteLine("1. Прямоугольник");
-        Console.WriteLine("2. Квадрат");
-        Console.WriteLine("3. Круг");
-        Console.WriteLine("4. Выход\n");
-        string input = Console.ReadLine();
-        return Check.InputCheck(input);
-
-        return 0;
-    }
+    
 }
 
 public class FigureComparer : IComparer
