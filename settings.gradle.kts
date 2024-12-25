@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Panshin_Homework"
+rootProject.name = "3kotlin"
 include(":app")
  

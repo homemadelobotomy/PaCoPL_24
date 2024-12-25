@@ -7,5 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="light_purple">#F2B3FF</color>
+    <color name="card_color">#F3F3F3</color>
+    <color name="top_down_color">#333333</color>
+    <color name="lil_button_or_add_pay_address">#EDD9DE</color>
+    <color name="add_button">#A72269</color>
+    <color name="final_buttons">#C47789</color>
+    <color name="low_top_bar">#333333</color>
 </resources>
