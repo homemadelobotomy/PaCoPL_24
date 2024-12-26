@@ -1,0 +1,29 @@
+{% load static %}
+<div class="row mt-5 mb-5">
+    <div class="card mb" style="border: 2px solid black;">
+      <div class="row">
+        <div class="col-2">
+            <div class = "d-flex flex-column">
+            <div style="width: 120px; height: auto;" class = "m-1 mt-3"  >
+                <img src="{% static 'img/i.jpg' %}" alt="Profile pic" class="img-thumbnail" >
+            </div>
+          <div class = "d-flex justify-content-center m-2">
+            <h5>{{answer.author}}</h5>
+        </div>
+          <input class="form-control mb-2" type="number" value = {{answer.likes}} placeholder="Likes" aria-label="default input example">
+        </div>
+    </div>
+          <div class="col-9">
+            <div class="d-flex flex-column justify-content-between" style = "height: 100%;">
+              <p class="card-text mt-2">{{answer.text}}  </p>
+              <div class="form-check mb-3">
+                <input class="form-check-input" {% if answer.status == 'c' %} checked {%endif%} type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Correct !
+                </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
